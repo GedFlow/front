@@ -13,12 +13,12 @@
                                         var code = json.code;
                                         var message = json.message;
 
-document.getElementById("code").innerHTML = code;
-document.getElementById("message").innerHTML = message;
+                                        document.getElementById("code").innerHTML = code;
+                                        document.getElementById("message").innerHTML = message;
                                 }
                         };
                         // GET 방식으로 요청을 보내면서 데이터를 동시에 전달함.
-                        httpRequest.open("GET", "http://123.123.123.102:8080/hello", true);
+                        httpRequest.open("GET", "http://10.102.131.211:8080/hello", true);
                         httpRequest.send();
                 }
         </script>
@@ -27,7 +27,6 @@ document.getElementById("message").innerHTML = message;
 <body>
 
         <h1>GET 방식의 요청</h1>
-        <h2>될 때 됏다222</h2>
         <button type="button" onclick="sendRequest()">GET 방식으로 요청 보내기!</button>
         <p id="code"></p>
         <p id="message"></p>
