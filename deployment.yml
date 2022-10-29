@@ -14,7 +14,7 @@ spec:
    spec:
     containers:
     - name: frontend
-      image: gedflow/frontend:latest
+      image: gedflow/front:latest
       ports:
       - containerPort: 80
       resources:
